@@ -114,4 +114,38 @@ class Program
 
 Make sure to replace "your_kafka_broker" and "your_topic" with your actual Kafka broker address and topic name. 
 
+## 3. How to run the Csharp Kafka producer and the Csharp Kafka Consumer
 
+### 3.1. Set the **bootstrap_server** in the **server.properties** file
+
+```
+advertised.listeners=PLAINTEXT://localhost:9092
+```
+
+### 3.2. Run the zookeeper
+
+Run the following command:
+
+```
+zookeeper-server-start C:\kafka_2.13-3.6.0\config\zookeeper.properties
+```
+
+### 3.3. Run the kafka-server
+
+Run the command:
+
+```
+kafka-server-start C:\kafka_2.13-3.6.0\config\server.properties
+```
+
+### 3.4. Run the Kafka Csharp Producer application
+
+![image](https://github.com/luiscoco/Kafka_Csharp_Producer/assets/32194879/970467fc-a4ba-4143-9c7a-cdd44096ff72)
+
+![image](https://github.com/luiscoco/Kafka_Csharp_Producer/assets/32194879/f149d6f7-d237-4079-a251-c26f2eef70e7)
+
+### 3.5. Run the Kafka Csharp Consumer application
+
+![image](https://github.com/luiscoco/Kafka_Csharp_Producer/assets/32194879/04b75a62-1adc-4c14-ae24-3e02920cc612)
+
+![image](https://github.com/luiscoco/Kafka_Csharp_Producer/assets/32194879/ad55ffb5-7b41-42fe-a443-6d24fe90001f)
